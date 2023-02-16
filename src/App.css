@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+}
+
+.App {
+  display: flex;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.Card {
+  margin: 20px;
+}
+
+.Card,
+.Input {
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.CopyButton {
+  /* CSS */
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: .25rem;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 100%;
+}
+.CopyButton:active,
+.CopyButton:hover {
+  outline: 0;
+}
+
+.CopyButton span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.CopyButton:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .CopyButton {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+
+
+/* CSS */
+.ResetButton {
+  background-color: #cf245f;
+  background-image: linear-gradient(to bottom right, #fcd34d, #ef4444, #ec4899);
+  border: 0;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem; /* 18px */
+  font-weight: 600;
+  line-height: 1.75rem; /* 28px */
+  padding: 1rem 1.25rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 20px;
+}
+
+.ResetButton:hover {
+  box-shadow: none;
+}
